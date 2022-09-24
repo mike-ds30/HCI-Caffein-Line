@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="desserts/desserts.css">
+  <link href="https://fonts.cdnfonts.com/css/akrobat" rel="stylesheet">
+  <script src="jquery-3.6.0.js"></script>
+  <script src="desserts/desserts.js"></script>
+  <title>Desserts | Caffein Line</title>
+</head>
+<body>
+  <div class="header">
+    <div class="merk">
+      <img src="desserts/logo.png" alt="">
+    </div>
+    <div class="navBar">
+      <input type="checkbox" class="dd_btn" id="dd_btn">
+      <label for="dd_btn"><img src="desserts/menu.png" alt="" class="dd_btn_img"></label>
+      <div class="navMenu_content" id="navMenu_cont">
+        <a href="index.html"> Home </a>
+        <input type="checkbox" class="menu_btn" id="menu_btn">
+        <label for="menu_btn" class="menu_btn_name now">
+          <img src="desserts/triangle-left-black.png" alt="" class="menu_btn_img">
+           Menu 
+        </label>
+        <div class="menu_list">
+          <a href="beverages.html"> Beverages </a>
+          <a href="desserts.html" class="now"> Desserts </a>
+        </div>
+        <a href="contact us.html"> Contact Us </a>
+        <a href="payment.html"> Payment </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <h3> <img src="desserts/free delivery.png" alt=""> <b>FREE SHIPPING</b> without minimum transaction! </h3>
+  </div>
+  <div class="content">
+    <h1 class="title">Desserts</h1>
+    <h2> Secret to world peace is hidden somewhere in the smell of coffee and baked sweets </h2>
+    <p> We value diversities in customers' taste, so we are constantly developing our food range to offer a delicious selection of freshly prepared food exclusively for you. Through trials and errors, we have found the perfect balance, texture, and base for all of the artisanal toppings we would put on top. Freshly made from scratch, our dessert delights melt in your mouth in all their incredible varieties. </p>
+    <div class="select_intro">
+      <h2>Select a category to view its menu</h2>
+    </div>
+    <div class="select_category">
+      <div class="coffeedessert_category">
+        <h1>Coffee Desserts</h1>
+        <img src="desserts/coffee dessert.jpg" alt="">
+      </div>
+      <div class="teadessert_category">
+        <h1>Tea Desserts</h1>
+        <img src="desserts/tea dessert.jpg" alt="">
+      </div>
+    </div>
+    <div class="coffeedessert_menu">
+      <div class="cdcard1">
+        <img src="desserts/coffee_banana_5.jpg" alt="">
+        <h1>Caramel Banana<br>Coffee Cake</h1>
+        <button type="button" class="cdadd1" id="cdadd1" onclick="add_to_cart('Caramel Banana Coffee Cake')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="cdcard2">
+        <img src="desserts/coffee_mousse_3.jpg" alt="">
+        <h1>Chocolate Coffee<br>Mousse</h1>
+        <button type="button" class="cdadd2" id="cdadd2" onclick="add_to_cart('Chocolate Coffee Mousse')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="cdcard3">
+        <img src="desserts/coffee_pannacota_2.jpg" alt="">
+        <h1>Coffee and Milk<br>Panna Cotta</h1>
+        <button type="button" class="cdadd3" id="cdadd3" onclick="add_to_cart('Coffee and Milk Panna Cotta')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="cdcard4">
+        <img src="desserts/coffee_parfait_1.jpg" alt="">
+        <h1>Coffee Parfait<br>with Ice Cream</h1>
+        <button type="button" class="cdadd4" id="cdadd4" onclick="add_to_cart('Coffee Parfait with Ice Cream')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="cdcard5">
+        <img src="desserts/coffee_walnut_4.jpg" alt="">
+        <h1>Coffee Walnut<br>Cake</h1>
+        <button type="button" class="cdadd5" id="cdadd5" onclick="add_to_cart('Coffee Walnut Cake')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="cdcard6">
+        <img src="desserts/coffee_jelly_6.jpg" alt="">
+        <h1>Milk Coffee<br>Jelly</h1>
+        <button type="button" class="cdadd6" id="cdadd6" onclick="add_to_cart('Milk Coffee Jelly')"> &nbsp Add to cart &nbsp </button>
+      </div>
+    </div>
+    <div class="teadessert_menu">
+      <div class="tdcard1">
+        <img src="desserts/butterfly pea panna cotta.jpg" alt="">
+        <h1>Butterfly Pea<br>Panna Cotta</h1>
+        <button type="button" class="tdadd1" id="tdadd1" onclick="add_to_cart('Butterfly Pea Panna Cotta')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="tdcard2">
+        <img src="desserts/chrysanthemum goji longan jelly.jpg" alt="">
+        <h1>Chrysanthemum<br>Longan Jelly</h1>
+        <button type="button" class="tdadd2" id="tdadd2" onclick="add_to_cart('Chrysanthemum Longan Jelly')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="tdcard3">
+        <img src="desserts/earl grey boba molten cake.jpg" alt="">
+        <h1>Earl Grey Boba<br>Molten Cake</h1>
+        <button type="button" class="tdadd3" id="tdadd3" onclick="add_to_cart('Earl Grey Boba Molten Cake')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="tdcard4">
+        <img src="desserts/lavender macaron.jpg" alt="">
+        <h1>Lavender<br>Macarons</h1>
+        <button type="button" class="tdadd4" id="tdadd4" onclick="add_to_cart('Lavender Macarons')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="tdcard5">
+        <img src="desserts/lemon mille crepes.jpg" alt="">
+        <h1>Lemon Mille<br>Crepes</h1>
+        <button type="button" class="tdadd5" id="tdadd5" onclick="add_to_cart('Lemon Mille Crepes')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="tdcard6">
+        <img src="desserts/matcha layered cheese cake.jpg" alt="">
+        <h1>Matcha Layered<br>Cheese Cake</h1>
+        <button type="button" class="tdadd6" id="tdadd6" onclick="add_to_cart('Matcha Layered Cheese Cake')"> &nbsp Add to cart &nbsp </button>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="find_us">
+      <h2>Find Us</h2>
+      <a href="https://facebook.com"><img src="desserts/facebook_idle.png" alt="" class="fb_img"> </a>
+      <a href="https://instagram.com"> <img src="desserts/instagram_idle.png" alt="" class="ig_img"></a>
+      <a href="https://youtube.com"><img src="desserts/youtube_idle.png" alt="" class="yt_img"> </a>
+    </div>
+    <div class="copyright">
+      <h4>&copy 2021 by Ina, Michael Dany Setiawan, and Sofie Kimberly</h4>
+    </div>
+  </div>
+</body>
+</html>

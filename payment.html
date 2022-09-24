@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="payment/payment.css">
+  <link href="https://fonts.cdnfonts.com/css/akrobat" rel="stylesheet">
+  <script src="jquery-3.6.0.js"></script>
+  <script src="payment/payment.js"></script>
+  <title>Payment | Caffein Line</title>
+</head>
+<body>
+  <div class="header">
+    <div class="merk">
+      <img src="payment/logo.png" alt="">
+    </div>
+    <div class="navBar">
+      <input type="checkbox" class="dd_btn" id="dd_btn">
+      <label for="dd_btn"><img src="payment/menu.png" alt="" class="dd_btn_img"></label>
+      <div class="navMenu_content" id="navMenu_cont">
+        <a href="index.html"> Home </a>
+        <input type="checkbox" class="menu_btn" id="menu_btn">
+        <label for="menu_btn" class="menu_btn_name">
+          <img src="payment/triangle-left-black.png" alt="" class="menu_btn_img">
+           Menu 
+        </label>
+        <div class="menu_list">
+          <a href="beverages.html"> Beverages </a>
+          <a href="desserts.html"> Desserts </a>
+        </div>
+        <a href="contact us.html"> Contact Us </a>
+        <a href="payment.html" class="now"> Payment </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <h3> <img src="payment/free delivery.png" alt=""> <b>FREE SHIPPING</b> without minimum transaction! </h3>
+  </div>
+  <div class="content">
+    <h1 class="title"> Payment Form </h1>
+    <div class="payment_info">
+      <h1>Secure Shopping</h1>
+      <h3>Don't worry! We use the latest security technology to encrypt all personal information.</h3> <br>
+      <h1>Flexible Payment Method</h1>
+      <h3>We accept both VISA and PayPal as payment methods!</h3>
+      <img src="payment/payment_2.png" alt="">
+    </div>
+    <div class="payment_form">
+      <form action="" method="" name="pay">
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name" placeholder="Enter your full name..."><br>
+        <label for="email">Email</label><br>
+        <input type="text" name="email" id="email" placeholder="Enter your email..."><br>
+        <label for="city">City</label><br>
+        <input type="text" name="city" id="city" placeholder="Enter your city..."><br>
+        <label for="address">Address</label><br>
+        <textarea name="address" id="address" placeholder="Enter your full address..."></textarea><br>
+        <label for="pay_type">Select your payment method</label><br>
+        <select name="pay_type" id="pay_type" onchange="pay_chosen()">
+          <option value="none">Select Visa or Paypal</option>
+          <option value="visa">Visa</option>
+          <option value="paypal">Paypal</option>
+        </select><br>
+        <div class="with_visa">
+          <label for="card_num">Card Number</label><br>
+          <input type="text" name="card_num" id="card_num" placeholder="Enter your card number (16 digits)..."><br>
+          <label for="validity">Validity</label><br>
+          <input type="text" name="validity" id="validity" placeholder="Enter your card's expiry date (MM/YY)..."><br>
+          <label for="cvv">CVV Number</label><br>
+          <input type="text" name="cvv" id="cvv" placeholder="Enter your card's CVV number (3 digits)..."><br><br>
+        </div>
+        <div class="with_paypal">
+          <label for="paypal_acc">Account</label><br>
+          <input type="text" name="paypal_acc" id="paypal_acc" placeholder="Enter your Paypal account email..."><br><br>
+        </div>
+        <input type="checkbox" name="terms" id="terms">
+        <label for="terms" class="condition">I agree to the terms and conditions.</label><br>
+        <div class="err">
+          <p class="nameErr"></p>
+          <p class="emailErr"></p>
+          <p class="cityErr"></p>
+          <p class="addressErr"></p>
+          <p class="paymentErr"></p>
+          <p class="cardnumErr"></p>
+          <p class="validityErr"></p>
+          <p class="cvvErr"></p>
+          <p class="paypalaccErr"></p>
+          <p class="termsErr"></p>
+        </div>
+        <input type="button" value="Pay Now!" onclick="validate_pay()">
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="find_us">
+      <h2>Find Us</h2>
+      <a href="https://facebook.com"><img src="payment/facebook_idle.png" alt="" class="fb_img"> </a>
+      <a href="https://instagram.com"> <img src="payment/instagram_idle.png" alt="" class="ig_img"></a>
+      <a href="https://youtube.com"><img src="payment/youtube_idle.png" alt="" class="yt_img"> </a>
+    </div>
+    <div class="copyright">
+      <h4>&copy 2021 by Ina, Michael Dany Setiawan, and Sofie Kimberly</h4>
+    </div>
+  </div>
+</body>
+</html>

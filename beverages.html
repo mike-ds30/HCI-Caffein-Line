@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="beverages/beverages.css">
+  <link href="https://fonts.cdnfonts.com/css/akrobat" rel="stylesheet">
+  <script src="jquery-3.6.0.js"></script>
+  <script src="beverages/beverages.js"></script>
+  <title>Beverages | Caffein Line</title>
+</head>
+<body>
+  <div class="header">
+    <div class="merk">
+      <img src="beverages/logo.png" alt="">
+    </div>
+    <div class="navBar">
+      <input type="checkbox" class="dd_btn" id="dd_btn">
+      <label for="dd_btn"><img src="beverages/menu.png" alt="" class="dd_btn_img"></label>
+      <div class="navMenu_content" id="navMenu_cont">
+        <a href="index.html"> Home </a>
+        <input type="checkbox" class="menu_btn" id="menu_btn">
+        <label for="menu_btn" class="menu_btn_name now">
+          <img src="beverages/triangle-left-black.png" alt="" class="menu_btn_img">
+           Menu 
+        </label>
+        <div class="menu_list">
+          <a href="beverages.html" class="now"> Beverages </a>
+          <a href="desserts.html"> Desserts </a>
+        </div>
+        <a href="contact us.html"> Contact Us </a>
+        <a href="payment.html"> Payment </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <h3> <img src="beverages/free delivery.png" alt=""> <b>FREE SHIPPING</b> without minimum transaction! </h3>
+  </div>
+  <div class="content">
+    <h1 class="title">Beverages</h1>
+    <h2> <b>Discover your perfect, personal drink.</b> </h2>
+    <p> For many of us, coffee means more than a morning jolt of caffeine. It may has a special place in someone's heart and is the reason for someone's pleasure in that day. Perhaps a perfect companion to start off your day or even end a tough day. That’s why we keep pace with the rapid evolution of coffee craft. That’s why we carefully selecting the finest beans, watch over each batch, bringing each bean to its peak of flavour. Like you, we care about the taste and quality of the coffee we serve and the hospitality you experience at Caffein Line. </p>
+    <div class="select_intro">
+      <h2> Select a category to view its menu</h2>
+    </div>
+    <div class="select_category">
+      <div class="coffee_category">
+        <h1>Coffee</h1>
+        <img src="beverages/coffee.jpg" alt="">
+      </div>
+      <div class="tea_category">
+        <h1>Tea</h1>
+        <img src="beverages/tea.jpg" alt="">
+      </div>
+    </div>
+    <div class="coffee_menu">
+      <div class="ccard1">
+        <img src="beverages/affogato.jpg" alt="">
+        <h1>Affogato</h1>
+        <button type="button" class="cadd1" id="cadd1" onclick="add_to_cart('Affogato')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="ccard2">
+        <img src="beverages/americano.jpg" alt="">
+        <h1>Americano</h1>
+        <button type="button" class="cadd2" id="cadd2" onclick="add_to_cart('Americano')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="ccard3">
+        <img src="beverages/espresso con panna.jpg" alt="">
+        <h1>Con Panna</h1>
+        <button type="button" class="cadd3" id="cadd3" onclick="add_to_cart('Con Panna')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="ccard4">
+        <img src="beverages/frappuccino.jpg" alt="">
+        <h1>Frappuccino</h1>
+        <button type="button" class="cadd4" id="cadd4" onclick="add_to_cart('Frappuccino')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="ccard5">
+        <img src="beverages/latte.jpg" alt="">
+        <h1>Latte</h1>
+        <button type="button" class="cadd5" id="cadd5" onclick="add_to_cart('Latte')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="ccard6">
+        <img src="beverages/mocha.jpg" alt="">
+        <h1>Mocha</h1>
+        <button type="button" class="cadd6" id="cadd6" onclick="add_to_cart('Mocha')"> &nbsp Add to cart &nbsp </button>
+      </div>
+    </div>
+    <div class="tea_menu">
+      <div class="tcard1">
+        <img src="beverages/butterfly pea tea.jpg" alt="">
+        <h1>Butterfly Pea Tea</h1>
+        <button type="button" class="tadd1" id="tadd1" onclick="add_to_cart('Butterfly Pea Tea')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="tcard2">
+        <img src="beverages/chrysanthemum tea.jpg" alt="">
+        <h1>Chrysanthemum Tea</h1>
+        <button type="button" class="tadd2" id="tadd2" onclick="add_to_cart('Chrysanthemum Tea')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="tcard3">
+        <img src="beverages/earl grey tea.jpg" alt="">
+        <h1>Earl Grey Tea</h1>
+        <button type="button" class="tadd3" id="tadd3" onclick="add_to_cart('Earl Grey Tea')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="tcard4">
+        <img src="beverages/green tea.jpg" alt="">
+        <h1>Green Tea</h1>
+        <button type="button" class="tadd4" id="tadd4" onclick="add_to_cart('Green Tea')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="tcard5">
+        <img src="beverages/lavender tea.jpg" alt="">
+        <h1>Lavender Tea</h1>
+        <button type="button" class="tadd5" id="tadd5" onclick="add_to_cart('Lavender Tea')"> &nbsp Add to cart &nbsp </button>
+      </div>
+      <div class="tcard6">
+        <img src="beverages/lemon peppermint tea.png" alt="">
+        <h1>Lemon Peppermint Tea</h1>
+        <button type="button" class="tadd6" id="tadd6" onclick="add_to_cart('Lemon Peppermint Tea')"> &nbsp Add to cart &nbsp </button>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="find_us">
+      <h2>Find Us</h2>
+      <a href="https://facebook.com"><img src="beverages/facebook_idle.png" alt="" class="fb_img"> </a>
+      <a href="https://instagram.com"> <img src="beverages/instagram_idle.png" alt="" class="ig_img"></a>
+      <a href="https://youtube.com"><img src="beverages/youtube_idle.png" alt="" class="yt_img"> </a>
+    </div>
+    <div class="copyright">
+      <h4>&copy 2021 by Ina, Michael Dany Setiawan, and Sofie Kimberly</h4>
+    </div>
+  </div>
+</body>
+</html>
